@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR" >
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Curso para Milionários - Comece do Zero</title>
+  <link rel="stylesheet" href="pag2.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <video class="video-bg" autoplay muted loop playsinline>
+    <source src="videoplayback.mp4" type="video/mp4" />
+    Seu navegador não suporta vídeo.
+  </video>
+
+  <header class="header">
+    <div class="header-content">
+      <h1 class="animated-text">💰 Curso para Milionários 🚀</h1>
+      <p>Transforme sua vida financeira com cursos práticos e exclusivos, começando do zero! 💎</p>
+      <button class="btn" id="btn-inscrever">Quero Começar Agora</button>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="courses" id="courses">
+      <h2>Nossos Cursos</h2>
+      <div class="course-list" id="course-list"></div>
+    </section>
+
+    <section class="testimonials" id="testimonials">
+      <h2>Depoimentos de Quem Já Fez</h2>
+      <div class="testimonial-list">
+        <article class="testimonial-card">
+          <p>“Eu nunca imaginei que seria possível. Agora estou faturando 6 dígitos por mês!”</p>
+          <h4>– Ana Souza</h4>
+        </article>
+        <article class="testimonial-card">
+          <p>“O método é simples e direto. Transformou minha mentalidade e meu negócio.”</p>
+          <h4>– Carlos Oliveira</h4>
+        </article>
+        <article class="testimonial-card">
+          <p>“Aprendi a vender online e hoje vivo da minha liberdade financeira.”</p>
+          <h4>– Mariana Lima</h4>
+        </article>
+      </div>
+    </section>
+
+    <section class="faq" id="faq">
+      <h2>Perguntas Frequentes</h2>
+      <div class="faq-list">
+        <details>
+          <summary>Preciso ter experiência para começar?</summary>
+          <p>Não! O curso é feito para quem está começando do zero.</p>
+        </details>
+        <details>
+          <summary>Quanto tempo dura o curso?</summary>
+          <p>Você pode acessar o conteúdo para sempre e fazer no seu ritmo.</p>
+        </details>
+        <details>
+          <summary>Posso parcelar o pagamento?</summary>
+          <p>Sim, oferecemos opções de parcelamento via cartão de crédito.</p>
+        </details>
+        <details>
+          <summary>Tenho garantia de satisfação?</summary>
+          <p>Sim, oferecemos 7 dias de garantia para testar o curso sem risco.</p>
+        </details>
+      </div>
+    </section>
+
+    <section class="call-to-action" id="inscreva-se">
+      <h2>Pronto para mudar sua vida financeira?</h2>
+      <button class="btn" id="btn-inscrever-2">Quero me inscrever</button>
+    </section>
+
+  </main>
+
+  <!-- Modal inscrição -->
+  <div id="form-modal" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-content">
+      <button class="close-btn" id="close-modal" aria-label="Fechar formulário">&times;</button>
+      <h3 id="modal-title">Inscreva-se no Curso</h3>
+      <form id="inscricao-form" novalidate>
+        <label for="nome">Nome completo:</label>
+        <input type="text" id="nome" name="nome" required placeholder="Seu nome completo" />
+        
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required placeholder="exemplo@dominio.com" />
+        
+        <label for="curso">Curso desejado:</label>
+        <select id="curso" name="curso" required>
+          <option value="" disabled selected>Selecione um curso</option>
+        </select>
+        
+        <button type="submit" class="btn">Enviar Inscrição</button>
+      </form>
+      <div id="msg-sucesso" class="msg-sucesso hidden" role="alert" aria-live="polite">
+        <p>✅ Inscrição realizada com sucesso! Em breve entraremos em contato.</p>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <p>© 2025 Curso para Milionários - Todos os direitos reservados</p>
+    <div class="socials">
+      <a href="https://instagram.com/" target="_blank" rel="noopener" aria-label="Instagram">📸</a>
+      <a href="https://facebook.com/" target="_blank" rel="noopener" aria-label="Facebook">📘</a>
+      <a href="https://youtube.com/" target="_blank" rel="noopener" aria-label="YouTube">▶️</a>
+    </div>
+  </footer>
+
+  <script src="js.js"></script>
+
+</body>
+</html>

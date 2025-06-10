@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+  <title>Curso para Milionários - Comece do Zero</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <video id="videoFundo" class="video-bg" autoplay loop playsinline>
+    <source src="videoplayback.mp4" type="video/mp4" />
+    Seu navegador não suporta vídeo.
+  </video>
+
+  <div class="content">
+    <h1>Transforme sua vida financeira<br>Começando do Zero</h1>
+    <p>Descubra o método exclusivo para alcançar a liberdade financeira e se tornar milionário, mesmo que você nunca tenha investido antes.</p>
+    <button class="btn" onclick="window.location.href='pag2.html'">Quero Começar Agora</button>
+  </div>
+
+  <script>
+    const video = document.getElementById('videoFundo');
+    // Começa mudo
+    video.muted = true;
+    video.play();
+
+    function ativarSom() {
+      if (video.muted) {
+        video.muted = false;  // tira o mute para ouvir o som
+        video.play();
+        document.removeEventListener('click', ativarSom); // para não repetir
+      }
+    }
+
+    // Ouve clique em qualquer lugar da página para ativar o som do vídeo
+    document.addEventListener('click', ativarSom);
+  </script>
+
+</body>
+</html>
